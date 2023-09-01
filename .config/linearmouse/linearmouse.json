@@ -1,0 +1,31 @@
+{
+  "$schema" : "https:\/\/schema.linearmouse.app\/0.9.2",
+  "schemes" : [
+    {
+      "pointer" : {
+        "acceleration" : 0,
+        "speed" : 0.6623,
+        "disableAcceleration" : false
+      },
+      "if" : {
+        "device" : {
+          "productName" : "ZOWIE Gaming mouse",
+          "productID" : "0x1",
+          "category" : "mouse",
+          "vendorID" : "0x1af3"
+        }
+      },
+      "scrolling" : {
+        "reverse" : {
+          "vertical" : true
+        },
+        "acceleration" : {
+          "vertical" : 0
+        },
+        "speed" : {
+          "vertical" : 34.73
+        }
+      }
+    }
+  ]
+}
