@@ -27,6 +27,16 @@ Also, the swiping between full-screen applications is set to four finger swipes,
 
 I use Karabiner for most of my keyboard shortcut needs - config is found in `.config/karabiner/karabiner.json`.
 
+## Important installed applications
+
+### Linearmouse
+
+I use this app to differ reverse scrolling and acceleration on my mouse and trackpad.
+
+### Raycast
+
+WIP
+
 ## Vim
 
 Simply open vim and it should automatically install everything the first time. If something is wrong, or nothing seemed to have been installed, run `:PlugInstall` from within vim.
