@@ -37,7 +37,38 @@ I use this app to differ reverse scrolling and acceleration on my mouse and trac
 
 WIP
 
+#### Plugins
+
+- Generate UUID
+- Copy local IP
+- ...
+
 ## Vim
 
 Simply open vim and it should automatically install everything the first time. If something is wrong, or nothing seemed to have been installed, run `:PlugInstall` from within vim.
 
+## Git aliases
+
+`~/.gitconfig`:
+
+```
+[alias]
+	co = checkout
+	cob = checkout -b
+	ci = commit
+	cia = commit --amend
+	st = status
+	aa = add -A
+	aaci = !git add -A && git commit
+	aacia = !git add -A && git commit --amend
+	acm = !git add -A && git commit -m
+	ri = rebase -i
+	ps = push
+	pssu = push --set-upstream origin
+	pl = pull
+	cp = cherry-pick
+	br = branch
+	cim = commit -m
+	logs = log --pretty=oneline
+	logp = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+```
