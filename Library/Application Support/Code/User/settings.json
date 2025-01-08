@@ -1,0 +1,51 @@
+{
+  "workbench.colorTheme": "Gruvbox Dark Hard",
+  "terminal.external.osxExec": "warp.app",
+  "editor.mouseWheelScrollSensitivity": 0.55,
+  "explorer.confirmDelete": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "git.openRepositoryInParentFolders": "always",
+  "workbench.startupEditor": "none",
+  "editor.defaultFormatter": "biomejs.biome",
+  "editor.formatOnSave": true,
+  "github.copilot.editor.enableAutoCompletions": true,
+  "chat.editing.alwaysSaveWithGeneratedChanges": true,
+  "editor.accessibilitySupport": "off",
+  "vim.leader": ",",
+    "vim.normalModeKeyBindingsNonRecursive": [
+      {
+        "before": ["<Leader>", "y"],
+        "after": ["\"", "*", "y"]
+      },
+      {
+        "before": ["<Leader>", "p"],
+        "after": ["\"", "*", "p"]
+      },
+      {
+        "before": ["<Leader>", "Y"],
+        "after": ["\"", "*", "Y"]
+      },
+      {
+        "before": ["<Leader>", "P"],
+        "after": ["\"", "*", "P"]
+      }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+      {
+        "before": ["<Leader>", "y"],
+        "after": ["\"", "*", "y"]
+      },
+      {
+        "before": ["<Leader>", "p"],
+        "after": ["\"", "*", "p"]
+      },
+      {
+        "before": ["<Leader>", "Y"],
+        "after": ["\"", "*", "Y"]
+      },
+      {
+        "before": ["<Leader>", "P"],
+        "after": ["\"", "*", "P"]
+      }
+    ]
+}

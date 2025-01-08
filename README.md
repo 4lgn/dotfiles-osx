@@ -35,12 +35,15 @@ I use this app to differ reverse scrolling and acceleration on my mouse and trac
 
 ### Raycast
 
-WIP
-
 #### Plugins
 
+- Color Picker
 - Generate UUID
-- Copy local IP
+- IP Geolocation
+- Lucide Icons Search
+- Password Generator
+- Screen OCR
+- Google Translate
 - ...
 
 ## Vim
