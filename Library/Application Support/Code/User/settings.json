@@ -47,5 +47,13 @@
         "before": ["<Leader>", "P"],
         "after": ["\"", "*", "P"]
       }
-    ]
+    ],
+    "workbench.preferredHighContrastColorTheme": "Gruvbox Dark Soft",
+    "workbench.preferredHighContrastLightColorTheme": "Gruvbox Dark Hard",
+    "[prisma]": {
+      "editor.defaultFormatter": "Prisma.prisma"
+    },
+    "redhat.telemetry.enabled": false,
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "terminal.integrated.scrollback": 10000
 }

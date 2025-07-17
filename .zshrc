@@ -37,5 +37,19 @@ export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 
 export GPG_TTY=$TTY
-export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
+export PATH="/opt/homebrew/opt/postgresql@15/bin:/$HOME/bin:$PATH"
 alias pn=pnpm
+
+# pnpm
+export PNPM_HOME="/Users/algn/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+# Added by Windsurf
+export PATH="/Users/algn/.codeium/windsurf/bin:$PATH"
+
+alias docker-remote='DOCKER_HOST=tcp://docker.lan:2375 docker'
+
