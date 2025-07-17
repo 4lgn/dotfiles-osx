@@ -4,7 +4,7 @@
             "complex_modifications": {
                 "rules": [
                     {
-                        "description": "Switch between DA <-> EN (Left Option + Left Shift simultaneously)",
+                        "description": "Switch between DA <-> EN (Left Option + Left Shift) - for Home Office keyboard",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -14,18 +14,16 @@
                                     }
                                 ],
                                 "from": {
-                                    "simultaneous": [
-                                        { "key_code": "left_shift" },
-                                        { "key_code": "left_option" }
-                                    ],
-                                    "simultaneous_options": {
-                                        "detect_key_down_uninterruptedly": false,
-                                        "key_down_order": "insensitive",
-                                        "key_up_order": "insensitive",
-                                        "to_after_key_up": []
-                                    }
+                                    "key_code": "left_shift",
+                                    "modifiers": { "mandatory": ["left_option"] }
                                 },
-                                "to": [{ "select_input_source": { "language": "da" } }],
+                                "to": [
+                                    {
+                                        "key_code": "left_shift",
+                                        "modifiers": ["left_option"]
+                                    }
+                                ],
+                                "to_if_alone": [{ "select_input_source": { "language": "da" } }],
                                 "type": "basic"
                             },
                             {
@@ -36,18 +34,16 @@
                                     }
                                 ],
                                 "from": {
-                                    "simultaneous": [
-                                        { "key_code": "left_shift" },
-                                        { "key_code": "left_option" }
-                                    ],
-                                    "simultaneous_options": {
-                                        "detect_key_down_uninterruptedly": false,
-                                        "key_down_order": "insensitive",
-                                        "key_up_order": "insensitive",
-                                        "to_after_key_up": []
-                                    }
+                                    "key_code": "left_shift",
+                                    "modifiers": { "mandatory": ["left_option"] }
                                 },
-                                "to": [{ "select_input_source": { "language": "en" } }],
+                                "to": [
+                                    {
+                                        "key_code": "left_shift",
+                                        "modifiers": ["left_option"]
+                                    }
+                                ],
+                                "to_if_alone": [{ "select_input_source": { "language": "en" } }],
                                 "type": "basic"
                             }
                         ]
@@ -178,7 +174,7 @@
                         ]
                     },
                     {
-                        "description": "Switch between DA <-> EN (Left Command + Left Shift simultaneously)",
+                        "description": "Switch between DA <-> EN (Left Command + Left Shift)",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -188,18 +184,16 @@
                                     }
                                 ],
                                 "from": {
-                                    "simultaneous": [
-                                        { "key_code": "left_shift" },
-                                        { "key_code": "left_command" }
-                                    ],
-                                    "simultaneous_options": {
-                                        "detect_key_down_uninterruptedly": false,
-                                        "key_down_order": "insensitive",
-                                        "key_up_order": "insensitive",
-                                        "to_after_key_up": []
-                                    }
+                                    "key_code": "left_shift",
+                                    "modifiers": { "mandatory": ["left_command"] }
                                 },
-                                "to": [{ "select_input_source": { "language": "da" } }],
+                                "to": [
+                                    {
+                                        "key_code": "left_shift",
+                                        "modifiers": ["left_command"]
+                                    }
+                                ],
+                                "to_if_alone": [{ "select_input_source": { "language": "da" } }],
                                 "type": "basic"
                             },
                             {
@@ -210,18 +204,16 @@
                                     }
                                 ],
                                 "from": {
-                                    "simultaneous": [
-                                        { "key_code": "left_shift" },
-                                        { "key_code": "left_command" }
-                                    ],
-                                    "simultaneous_options": {
-                                        "detect_key_down_uninterruptedly": false,
-                                        "key_down_order": "insensitive",
-                                        "key_up_order": "insensitive",
-                                        "to_after_key_up": []
-                                    }
+                                    "key_code": "left_shift",
+                                    "modifiers": { "mandatory": ["left_command"] }
                                 },
-                                "to": [{ "select_input_source": { "language": "en" } }],
+                                "to": [
+                                    {
+                                        "key_code": "left_shift",
+                                        "modifiers": ["left_command"]
+                                    }
+                                ],
+                                "to_if_alone": [{ "select_input_source": { "language": "en" } }],
                                 "type": "basic"
                             }
                         ]
